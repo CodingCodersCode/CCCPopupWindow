@@ -1,7 +1,5 @@
 package com.ccc.popupwindow;
 
-import android.os.Build;
-import android.view.KeyEvent;
 import android.view.MotionEvent;
 import android.view.View;
 
@@ -39,7 +37,7 @@ public class CCCPopupWindow extends BackgroundDarkPopupWindow {
                 @Override
                 public boolean onTouch(View v, MotionEvent event) {
 
-                    if (isEnableOutsideCancel()){
+                    if (isEnableOutsideCancel()) {
                         return false;
                     }
 
