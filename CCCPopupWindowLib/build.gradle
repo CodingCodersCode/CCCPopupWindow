@@ -36,5 +36,5 @@ dependencies {
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
 
     //引入PopupWindow弹窗类库
-    compile 'com.bakerj:backgrounddark-popupwindow:1.0.0'
+    //compile 'com.bakerj:backgrounddark-popupwindow:1.0.0'
 }

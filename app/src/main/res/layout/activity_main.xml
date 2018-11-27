@@ -2,6 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:id="@+id/ll_root"
     android:background="@android:color/white"
     android:gravity="center_horizontal"
     android:orientation="vertical">
@@ -26,5 +27,76 @@
         android:text="popupWindow——outside_and_backkey"
         android:textColor="@android:color/white" />
 
+    <TextView
+        android:id="@+id/tv_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="#0061FF"
+        android:padding="10dp"
+        android:text="btn1 btn1 btn1"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" />
+
+
+    <LinearLayout
+        android:id="@+id/ll_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="#0061FF"
+            android:gravity="center"
+            android:padding="20dp"
+            android:text="btn2 btn2 btn2"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp" />
+
+        <View
+            android:id="@+id/view_1"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="12dp"
+            android:background="#0061FF" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="#0061FF"
+            android:gravity="center"
+            android:padding="20dp"
+            android:text="btn2 btn2 btn2"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp" />
+
+        <View
+            android:id="@+id/view_2"
+            android:layout_width="20dp"
+            android:layout_height="2dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="12dp"
+            android:background="#0061FF" />
+
+    </LinearLayout>
 
 </LinearLayout>

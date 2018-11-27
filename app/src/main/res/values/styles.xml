@@ -13,4 +13,8 @@
         <item name="android:windowExitAnimation">@anim/anim_popup_exit</item>
     </style>
 
+    <style name="Animation_Search_Rule_Select">
+        <item name="android:windowEnterAnimation">@anim/anim_layout_search_rule_select_enter</item>
+        <item name="android:windowExitAnimation">@anim/anim_layout_search_rule_select_exit</item>
+    </style>
 </resources>
