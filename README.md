@@ -13,7 +13,7 @@
 
 ```
 dependencies {
-	        implementation 'com.github.CodingCodersCode:CCCPopupWindow:v1.0'
+	        implementation 'com.github.CodingCodersCode:CCCPopupWindow:v1.1'
 	}
 
 ```
