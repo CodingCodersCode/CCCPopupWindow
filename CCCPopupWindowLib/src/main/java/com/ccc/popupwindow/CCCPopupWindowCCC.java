@@ -67,10 +67,10 @@ public class CCCPopupWindowCCC extends CCCBackgroundDarkPopupWindow {
         this.setTouchInterceptor(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
-                if (isEnableOutsideCancel()) {
+                /*if (isEnableOutsideCancel()) {
                     dismiss();
                     return true;
-                }
+                }*/
 
                 final int x = (int) event.getX();
                 final int y = (int) event.getY();

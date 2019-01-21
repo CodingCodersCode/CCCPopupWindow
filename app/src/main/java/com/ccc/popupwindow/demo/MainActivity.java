@@ -104,6 +104,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     private void onShowPopupWindow1() {
         View view = layoutInflater.inflate(R.layout.layout_user_avatar_source_select, null);
+        bindListener(view);
 
         PopupWindowUtil popupWindowUtil = new PopupWindowUtil();
         popupWindowUtil.createPopupWindowWithView(this.tv_1, view, getFilledView(), this);
@@ -112,6 +113,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     private void onShowPopupWindow2() {
         View view = layoutInflater.inflate(R.layout.layout_user_avatar_source_select, null);
+        bindListener(view);
 
         PopupWindowUtil popupWindowUtil = new PopupWindowUtil();
         popupWindowUtil.createPopupWindowWithView(this.view_1, view, getFilledView(), this);
@@ -119,9 +121,33 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     private void onShowPopupWindow3() {
         View view = layoutInflater.inflate(R.layout.layout_user_avatar_source_select, null);
+        bindListener(view);
 
         PopupWindowUtil popupWindowUtil = new PopupWindowUtil();
         popupWindowUtil.createPopupWindowWithView(this.view_2, view, getFilledView(), this);
+    }
+
+    private void bindListener(View view){
+        view.findViewById(R.id.tv_take_photo).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(MainActivity.this, "点击了拍照", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        view.findViewById(R.id.tv_from_gallery).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(MainActivity.this, "点击了从相册中选取", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        view.findViewById(R.id.tv_cancel).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(MainActivity.this, "点击了取消", Toast.LENGTH_SHORT).show();
+            }
+        });
     }
 
     private View getFilledView() {
