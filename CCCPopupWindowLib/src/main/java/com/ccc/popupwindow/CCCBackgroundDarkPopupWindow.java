@@ -269,7 +269,7 @@ public class CCCBackgroundDarkPopupWindow extends PopupWindow {
      */
     public void drakFillView(View view) {
         mFillPositionView = new WeakReference<>(view);
-        view.getLocationInWindow(mLocationInWindowPosition);
+        view.getLocationOnScreen(mLocationInWindowPosition);
         mRightOf = mLocationInWindowPosition[0];
         mLeftOf = mLocationInWindowPosition[0] + view.getWidth();
         mAbove = mLocationInWindowPosition[1] + view.getHeight();
@@ -283,7 +283,7 @@ public class CCCBackgroundDarkPopupWindow extends PopupWindow {
      */
     public void darkRightOf(View view) {
         mRightOfPositionView = new WeakReference<>(view);
-        view.getLocationInWindow(mLocationInWindowPosition);
+        view.getLocationOnScreen(mLocationInWindowPosition);
         mRightOf = mLocationInWindowPosition[0] + view.getWidth();
     }
 
@@ -294,7 +294,7 @@ public class CCCBackgroundDarkPopupWindow extends PopupWindow {
      */
     public void drakLeftOf(View view) {
         mLeftOfPositionView = new WeakReference<>(view);
-        view.getLocationInWindow(mLocationInWindowPosition);
+        view.getLocationOnScreen(mLocationInWindowPosition);
         mLeftOf = mLocationInWindowPosition[0];
     }
 
@@ -305,7 +305,7 @@ public class CCCBackgroundDarkPopupWindow extends PopupWindow {
      */
     public void darkAbove(View view) {
         mAbovePositionView = new WeakReference<>(view);
-        view.getLocationInWindow(mLocationInWindowPosition);
+        view.getLocationOnScreen(mLocationInWindowPosition);
         mAbove = mLocationInWindowPosition[1];
     }
 
@@ -316,7 +316,7 @@ public class CCCBackgroundDarkPopupWindow extends PopupWindow {
      */
     public void darkBelow(View view) {
         mBelowPositionView = new WeakReference<>(view);
-        view.getLocationInWindow(mLocationInWindowPosition);
+        view.getLocationOnScreen(mLocationInWindowPosition);
         mBelow = mLocationInWindowPosition[1] + view.getHeight();
     }
 

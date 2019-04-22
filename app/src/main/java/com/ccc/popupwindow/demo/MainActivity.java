@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.LayoutInflater;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.LinearLayout;
@@ -127,7 +128,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         popupWindowUtil.createPopupWindowWithView(this.view_2, view, getFilledView(), this);
     }
 
-    private void bindListener(View view){
+    private void bindListener(View view) {
         view.findViewById(R.id.tv_take_photo).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
